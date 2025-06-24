@@ -134,7 +134,7 @@ function BlogContent() {
                   alt={product.title}
                   className="h-32 w-32 object-contain mb-4"
                 />
-                <p className="text-lg font-semibold mb-2">{product.title}</p>
+                <p className="text-lg text-gray-800 font-semibold mb-2">{product.title}</p>
                 <span className="text-pink-500 font-bold">{product.price}</span>
               </div>
             ))}
@@ -261,7 +261,7 @@ function BlogContent() {
               </div>
   
               <div>
-  <h3 className="text-lg font-bold mb-4">Categories</h3>
+  <h3 className="text-lg text-gray-800 font-bold mb-4">Categories</h3>
   <div className="grid grid-cols-2 gap-4 text-gray-700">
     {/* First Column */}
     <ul className="space-y-2">
@@ -292,7 +292,7 @@ function BlogContent() {
 
             {/* Recent Posts */}
             <div>
-            <h3 className="text-lg font-bold mb-4">Recent Posts</h3>
+            <h3 className="text-lg text-gray-800 font-bold mb-4">Recent Posts</h3>
             <ul className="space-y-4">
               {["/jm.jpeg", "/yz.jpeg", "/kjl.jpeg"].map((img, idx) => (
                 <li key={idx} className="flex gap-4 items-center">
@@ -301,7 +301,7 @@ function BlogContent() {
                     alt="Recent Post"
                     className="w-12 h-12 object-cover rounded-lg"
                   />
-                  <a href="#" className="hover:text-pink-500">
+                  <a href="#" className="hover:text-pink-500 text-gray-800">
                     Recent Post Title
                   </a>
                 </li>
@@ -312,7 +312,7 @@ function BlogContent() {
 
             {/* Sale Product */}
           <div>
-            <h3 className="text-lg font-bold mb-4">Sale Product</h3>
+            <h3 className="text-lg font-bold text-gray-800 mb-4">Sale Product</h3>
             <div className="space-y-4">
               <div className="flex items-center gap-4">
                 <img
@@ -352,7 +352,7 @@ function BlogContent() {
 
           {/* Offer Product */}
          <div>
-  <h3 className="text-lg font-bold mb-4">Offer Product</h3>
+  <h3 className="text-lg font-bold text-gray-800 mb-4">Offer Product</h3>
   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
     {/* Item 1 */}
     <div className="flex items-center gap-4">
@@ -411,7 +411,7 @@ function BlogContent() {
   
             {/* Social Links */}
             <div>
-  <h3 className="text-lg font-bold mb-4">Follow</h3>
+  <h3 className="text-lg font-bold text-gray-800 mb-4">Follow</h3>
   <div className="flex gap-4">
     {/* Facebook Icon */}
     <a

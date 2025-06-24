@@ -61,13 +61,7 @@ const ShippingForm = ({ onShippingComplete }: ShippingFormProps) => {
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         
-        // Validate address before submission
-        const addressValidation = validateAddress(formData.address, formData.postalCode);
-        if (!addressValidation.isValid) {
-            toast.error('Please enter a valid address');
-            return;
-        }
-    
+       
         const newOrderId = generateOrderId();
         // Calculate rate based on a default weight of 2kg
         const shippingRate = calculateShippingRate(2, formData.country as "United States" | "United Kingdom" | "Canada" | "Australia");
@@ -118,7 +112,7 @@ const ShippingForm = ({ onShippingComplete }: ShippingFormProps) => {
                 <select
                     value={formData.country}
                     onChange={(e) => setFormData({...formData, country: e.target.value})}
-                    className="w-full p-2 border rounded"
+                    className="w-full text-gray-800 p-2 border rounded"
                 >
                     <option value="">Select Country</option>
                     <option value="United Kingdom">United Kingdom</option>

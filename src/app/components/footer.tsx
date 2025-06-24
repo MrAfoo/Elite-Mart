@@ -86,19 +86,19 @@ const Footer = () => {
     <div className="container px-5  h-[80px] sm:h-[53px] mx-auto flex items-center sm:flex-row flex-col">
       
     <p className="text-sm text-[#9DA0AE] sm:ml-6 sm:mt-0 mt-4">
-        © 2024 Hekto —
+        © 2024 Elitee Mart —
         <a
           href="https://twitter.com/knyttnev"
           rel="noopener noreferrer"
           className="text-[#9DA0AE] ml-1"
           target="_blank"
         >
-          @Right Reserved
+          @All Righs Reserved
         </a>
       </p>
       <span className="flex flex-row sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
 
-     <div className="w-5 h-5 " ><a href="https://www.facebook.com/profile.php?id=100080688785803"><FaFacebook  /></a></div> 
+     <div className="w-5 h-5 text-gray-900" ><a href="https://www.facebook.com/profile.php?id=100080688785803"><FaFacebook  /></a></div> 
       <div className="w-5 h-5  ml-3 text-gray-900"><a href="https://www.instagram.com"><RxInstagramLogo /></a></div>
         <div className="w-5 h-5  ml-3 text-gray-900"><a href="https://www.linkedin.com/in/affoo-bhai-37b929300/"><FaLinkedin  /></a></div>
 

@@ -67,7 +67,7 @@ export default function HektoDemo() {
             <div className="flex flex-col md:flex-row gap-8 max-w-7xl mx-auto px-4 py-6">
                 {/* Left Section */}
                 <div className="w-full md:w-2/3 bg-white p-6 md:p-8 rounded-lg shadow-md">
-                    <h2 className="text-2xl font-bold mb-4">Hekto Demo</h2>
+                    <h2 className="text-2xl text-gray-800 font-bold mb-4">Hekto Demo</h2>
                     <p className="text-gray-500 mb-6">Cart / Information / Shipping / Payment</p>
 
                     

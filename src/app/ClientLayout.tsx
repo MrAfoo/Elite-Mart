@@ -17,7 +17,7 @@ export default function ClientLayout({
       <CartProvider>
         <ClientProviderNoSSR>
           <Navbar />
-          <main className="flex-grow bg-white dark:bg-gray-900">{children}</main>
+          <main className="flex-grow bg-white dark:bg-white">{children}</main>
           <Footer />
           <Toaster
             position="bottom-right"

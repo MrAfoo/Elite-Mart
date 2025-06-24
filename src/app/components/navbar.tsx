@@ -87,7 +87,7 @@ export default function Header() {
           ) : (
             <div  className="flex items-center space-x-1">
             <button onClick={() => loginWithRedirect()} className="hidden hover:text-gray-300 sm:inline text-sm text-white" >Login</button>
-            <button> <FiUser className="w-4 h-4 text-white hover:text-gray-300" /> </button>
+            <button> <FiUser onClick={() => loginWithRedirect()} className="w-4 h-4 text-white hover:text-gray-300" /> </button>
           </div>
             )}
         
@@ -185,14 +185,14 @@ export default function Header() {
 
             {/* Dropdown */}
             {isDropdownOpen && (
-              <div className="absolute top-full left-0 bg-white shadow-md rounded-md w-40 mt-2 z-50">
-                <Link href="/shopList" className="block px-4 py-2 hover:bg-gray-100">
+              <div className="absolute top-full left-0  bg-white shadow-md rounded-md w-40 mt-2 z-50">
+                <Link href="/shopList" className="block px-4 py-2 text-[#0D0E43] hover:bg-gray-100">
                   Shop List
                 </Link>
-                <Link href="/shopLeftSidebar" className="block px-4 py-2 hover:bg-gray-100">
+                <Link href="/shopLeftSidebar" className="block px-4 py-2 text-[#0D0E43] hover:bg-gray-100">
                   Shop LSB
                 </Link>
-                <Link href="/shopGrid" className="block px-4 py-2 hover:bg-gray-100">
+                <Link href="/shopGrid" className="block px-4 py-2 text-[#0D0E43] hover:bg-gray-100">
                   Shop Grid
                 </Link>
               </div>

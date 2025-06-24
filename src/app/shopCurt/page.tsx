@@ -89,10 +89,10 @@ const handleCheckout = async () => {
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Product Table */}
           <div className="flex-1 bg-white shadow-md rounded-lg overflow-auto">
-          <table className="w-full "> {/* Add table-fixed */}
+          <table className="w-full "> 
   <thead>
-    <tr className="border-b bg-gray-50">
-      <th className="p-4 text-xs md:text-base w-[40%]">Product</th> {/* Add width */}
+    <tr className="border-b text-gray-800 bg-gray-50">
+      <th className="p-4 text-xs md:text-base w-[40%]">Product</th> 
       <th className="p-6 text-xs md:text-base w-[15%]">Price</th>
       <th className="p-4 text-xs md:text-base w-[15%]">Quantity</th>
       <th className="p-4 text-xs md:text-base w-[15%]">Total</th>
@@ -102,7 +102,7 @@ const handleCheckout = async () => {
               <tbody>
                 {cart.length === 0 ? (
                   <tr>
-                    <td colSpan={5} className="text-center p-4">
+                    <td colSpan={5} className="text-center text-gray-800 p-4">
                       Your cart is empty
                     </td>
                   </tr>
@@ -189,13 +189,13 @@ const handleCheckout = async () => {
           <div className="w-full lg:w-1/3 flex flex-col gap-8">
             {/* Cart Totals */}
             <div className="bg-[#F6F5FF] p-6 rounded">
-              <h3 className="text-center text-lg font-bold mb-4">Cart Totals</h3>
-              <div className="flex justify-between">
+              <h3 className="text-center text-lg text-gray-800 font-bold mb-4">Cart Totals</h3>
+              <div className="flex text-gray-800 justify-between">
                 <p>Subtotal:</p>
                 <p className="font-semibold">${getCartTotal().toFixed(2)}</p>
               </div>
               <hr className="my-4 border-t border-gray-200" />
-              <div className="flex justify-between mt-2">
+              <div className="flex justify-between  text-gray-800 mt-2">
                 <p>Total:</p>
                 <p className="font-semibold">${getCartTotal().toFixed(2)}</p>
               </div>

@@ -210,26 +210,26 @@ const ShopListPage: React.FC = () => {
           <div className="flex flex-wrap justify-between items-center gap-4">
             <div className="flex flex-wrap items-center gap-6">
               <div className="relative">
-                <select className="appearance-none bg-transparent pl-4 pr-10 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent">
+                <select className="appearance-none text-[#0D0E43] bg-transparent pl-4 pr-10 py-2 border border-gray-800 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent">
                   <option>Latest Products</option>
                   <option>Best Selling</option>
                   <option>Price: Low to High</option>
                   <option>Price: High to Low</option>
                 </select>
                 <div className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2">
-                  <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-4 h-4  text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
                   </svg>
                 </div>
               </div>
               
               <div className="flex items-center space-x-2">
-                <button className="p-2 rounded-lg border border-gray-200 hover:border-pink-500 transition-colors">
+                <button className="p-2 rounded-lg border text-[#0D0E43] border-gray-800 hover:border-pink-500 transition-colors">
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
                   </svg>
                 </button>
-                <button className="p-2 rounded-lg border border-gray-200 hover:border-pink-500 transition-colors">
+                <button className="p-2 rounded-lg border text-[#0D0E43] border-gray-800 hover:border-pink-500 transition-colors">
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 0h8v12H6V4z" clipRule="evenodd" />
                   </svg>
@@ -252,8 +252,8 @@ const ShopListPage: React.FC = () => {
 
   <div className="p-4 overflow-y-auto h-full">
     {/* Product Brand */}
-    <h2 className="text-lg font-semibold mb-4">Product Brand</h2>
-    <div className="space-y-2">
+    <h2 className="text-lg font-semibold text-[#0D0E43] mb-4">Product Brand</h2>
+    <div className="space-y-2 text-[#0D0E43]">
       {['Coaster Furniture', 'Fusion Dot High Fashion', 'Unique Furniture Restor', 'Dream Furniture Flipping', 'Young Repurposed', 'Green DIY furniture'].map((brand, index) => (
         <div key={index}>
           <input type="checkbox" id={`brand-${index}`} className="mr-2" />
@@ -263,8 +263,8 @@ const ShopListPage: React.FC = () => {
     </div>
 
     {/* Discount Offer */}
-    <h2 className="text-lg font-semibold mt-6 mb-4">Discount Offer</h2>
-    <div className="space-y-2">
+    <h2 className="text-lg font-semibold mt-6 text-[#0D0E43] mb-4">Discount Offer</h2>
+    <div className="space-y-2 text-[#0D0E43]">
       {['20% Cashback', '5% Cashback Offer', '25% Discount Offer'].map((offer, index) => (
         <div key={index}>
           <input type="checkbox" id={`offer-${index}`} className="mr-2" />
@@ -274,8 +274,8 @@ const ShopListPage: React.FC = () => {
     </div>
 
     {/* Rating Item */}
-    <h2 className="text-lg font-semibold mt-6 mb-4">Rating Item</h2>
-    <div className="space-y-2">
+    <h2 className="text-lg font-semibold mt-6 text-[#0D0E43] mb-4">Rating Item</h2>
+    <div className="space-y-2 text-[#0D0E43]">
       {[5, 4, 3, 2].map((rating, index) => (
         <div key={index}>
           <input type="checkbox" id={`rating-${index}`} className="mr-2" />
@@ -287,8 +287,8 @@ const ShopListPage: React.FC = () => {
     </div>
 
     {/* Categories */}
-    <h2 className="text-lg font-semibold mt-6 mb-4">Categories</h2>
-    <div className="space-y-2">
+    <h2 className="text-lg font-semibold mt-6 text-[#0D0E43] mb-4">Categories</h2>
+    <div className="space-y-2 text-[#0D0E43] ">
       {['Prestashop', 'Magento', 'Bigcommerce', 'osCommerce', '3dcart', 'Bags', 'Accessories', 'Jewellery', 'Watches'].map((category, index) => (
         <div key={index}>
           <input type="checkbox" id={`category-${index}`} className="mr-2" />
@@ -298,8 +298,8 @@ const ShopListPage: React.FC = () => {
     </div>
 
     {/* Price Filter */}
-    <h2 className="text-lg font-semibold mt-6 mb-4">Price Filter</h2>
-<div className="space-y-2">
+    <h2 className="text-lg font-semibold mt-6 text-[#0D0E43] vmb-4">Price Filter</h2>
+<div className="space-y-2 text-[#0D0E43]">
   {[
     { label: '$0.00 - $150.00', min: 0, max: 150 },
     { label: '$150.00 - $350.00', min: 150, max: 350 },
@@ -320,8 +320,8 @@ const ShopListPage: React.FC = () => {
 </div>
 
    {/* Filter By Color */}
-<h2 className="text-lg font-semibold mt-6 mb-4">Filter By Color</h2>
-<div className="space-y-2">
+<h2 className="text-lg font-semibold text-[#0D0E43] mt-6 mb-4">Filter By Color</h2>
+<div className="space-y-2 text-[#0D0E43]">
   {['Blue', 'Orange', 'Brown', 'Green', 'Purple', 'Sky'].map((color, index) => (
     <div key={index}>
       <input 

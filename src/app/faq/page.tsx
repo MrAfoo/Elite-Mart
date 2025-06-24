@@ -123,7 +123,7 @@ export default function FAQ() {
       </div>
 
       {/* Partners Section */}
-      <div className="bg-gray-50 py-16">
+      <div className="bg-white py-16">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-5 gap-8 items-center">
             {["/logz5.jpeg", "/logz1.jpeg", "/logz2.jpeg", "/logz4.jpeg", "/logz3.jpeg"].map((logo, index) => (

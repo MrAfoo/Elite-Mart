@@ -43,7 +43,7 @@ const ShippingCalculator = () => {
       return;
     }
 
-    // Get shipping rates for the selected country
+    
     const countryRates = SHIPPING_RATES[country];
     
     if (!countryRates) {
@@ -67,13 +67,13 @@ const ShippingCalculator = () => {
 
   return (
     <div className="bg-[#F6F5FF] p-6 rounded">
-      <h3 className="text-center text-lg font-bold mb-4">
+      <h3 className="text-center text-gray-800 text-lg font-bold mb-4">
         Calculate Shipping
       </h3>
       <select
         value={country}
         onChange={(e) => setCountry(e.target.value)}
-        className="w-full border rounded p-2 mb-4"
+        className="w-full border text-gray-800 rounded p-2 mb-4"
       >
         <option value="">Select Country</option>
         {Object.keys(SHIPPING_RATES).map((country) => (
@@ -99,7 +99,7 @@ const ShippingCalculator = () => {
       <select
         value={shippingMethod}
         onChange={(e) => setShippingMethod(e.target.value)}
-        className="w-full border rounded p-2 mb-4"
+        className="w-full border text-gray-800 rounded p-2 mb-4"
       >
         <option value="Standard">Standard Shipping</option>
         <option value="Express">Express Shipping</option>
@@ -111,7 +111,7 @@ const ShippingCalculator = () => {
         Calculate Shipping
       </button>
       {shippingCost && (
-        <div className="mt-4 text-center font-semibold">
+        <div className="mt-4 text-center text-gray-800 font-semibold">
           Estimated Shipping Cost: ${shippingCost.toFixed(2)}
         </div>
       )}

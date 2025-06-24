@@ -110,7 +110,7 @@ export default function Blog() {
 
           {/* Categories */}
           <div className="bg-white p-6 rounded-xl shadow-sm">
-          <h3 className="text-lg font-bold mb-4">Categories</h3>
+          <h3 className="text-lg font-bold text-gray-800 mb-4">Categories</h3>
             <ul className="space-y-2">
             {["Hobbies (14)", "Women (21)", "Fashion (10)", "Technology (18)"].map((category, index) => (
                     <li key={index}>
@@ -130,13 +130,13 @@ export default function Blog() {
 
           {/* Recent Posts */}
           <div>
-            <h3 className="text-lg font-bold mb-4">Recent Posts</h3>
+            <h3 className="text-lg font-bold text-gray-800 mb-4">Recent Posts</h3>
             <ul className="space-y-3">
               {["/jm.jpeg", "/yz.jpeg", "/kjl.jpeg", "/gb.jpeg"].map((img, i) => (
                 <li key={i} className="flex items-center gap-4">
                   <img src={img} alt="Recent Post" className="w-12 h-12 rounded object-cover" />
                   <div>
-                    <a href="#" className="hover:text-pink-500 block">
+                    <a href="#" className="hover:text-pink-500 text-gray-800  block">
                       In a long established fact
                     </a>
                     <p className="text-gray-600 text-sm">Aug 09 2020</p>
@@ -149,7 +149,7 @@ export default function Blog() {
 
             {/* Sale Product */}
           <div>
-            <h3 className="text-lg font-bold mb-4">Sale Product</h3>
+            <h3 className="text-lg font-bold text-gray-800 mb-4">Sale Product</h3>
             <div className="space-y-4">
               <div className="flex items-center gap-4">
                 <img
@@ -189,7 +189,7 @@ export default function Blog() {
 
           {/* Offer Product */}
          <div>
-  <h3 className="text-lg font-bold mb-4">Offer Product</h3>
+  <h3 className="text-lg text-gray-800 font-bold mb-4">Offer Product</h3>
   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
     {/* Item 1 */}
     <div className="flex items-center gap-4">
@@ -248,7 +248,7 @@ export default function Blog() {
   
             {/* Social Links */}
             <div>
-            <h3 className="text-lg font-bold mb-4">Follow</h3>
+            <h3 className="text-lg text-gray-800 font-bold mb-4">Follow</h3>
             <div className="flex gap-4">
               {[
                 { icon: <FaFacebookF />, color: "bg-blue-500", hover: "hover:bg-blue-600" },
@@ -267,7 +267,7 @@ export default function Blog() {
           </div>
                {/* Tags */}
                <div>
-  <h3 className="text-lg font-bold mb-4">Tags</h3>
+  <h3 className="text-lg font-bold text-gray-800 mb-4">Tags</h3>
   <div className="flex flex-wrap gap-x-4 gap-y-2">
     {/* First Row */}
     <div className="basis-full flex gap-x-4">

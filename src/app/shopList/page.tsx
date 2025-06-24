@@ -72,7 +72,7 @@ export default function ShopListPage() {
 
       {/* Content Section */}
       <div className="mt-8 px-4 lg:px-16 text-center lg:text-left">
-        <h2 className="text-2xl font-semibold mb-2">
+        <h2 className="text-2xl text-gray-800 font-semibold mb-2">
           Ecommerce Accessories &amp; Fashion Items
         </h2>
         <p className="text-gray-600 mt-2">About 9,620 results (0.62 seconds)</p>
@@ -98,7 +98,7 @@ export default function ShopListPage() {
       </label>
       <select
         id="sort-by"
-        className="border border-gray-300 rounded-md p-1 text-sm"
+        className="border border-gray-300 text-gray-800 rounded-md p-1 text-sm"
       >
         <option>Best Match</option>
         <option>Price Low to High</option>
@@ -135,7 +135,7 @@ export default function ShopListPage() {
 
             {/* Product Details */}
             <div className="flex-1 w-full">
-              <h3 className="text-lg font-semibold">{product.title}</h3>
+              <h3 className="text-lg text-black font-semibold">{product.title}</h3>
               <div className="flex items-center gap-2">
                 <span className="text-red-500 font-bold">
                   ${product.discountedPrice}
@@ -176,7 +176,7 @@ export default function ShopListPage() {
       </div>
 
       {/* Brand Logos Section */}
-      <div className="flex flex-wrap justify-center items-center gap-8 mt-8 mb-8">
+      <div className="flex flex-wrap bg-white justify-center items-center gap-8 mt-8 mb-8">
          {['/logz5.jpeg', '/logz1.jpeg', '/logz2.jpeg', '/logz4.jpeg', '/logz3.jpeg'].map(
       (logo, index) => (
         <img

@@ -14,16 +14,16 @@ const CartTotals = ({ subtotal, shippingRate, tax, isShippingComplete, onProceed
     return (
         <div>
             <div className="bg-[#F6F5FF] p-4 rounded-lg mt-6">
-                <div className="space-y-3">
-                    <div className="flex justify-between text-lg font-semibold">
+                <div className="space-y-3 ">
+                    <div className="flex justify-between text-gray-800 text-lg font-semibold">
                         <span>Subtotal:</span>
                         <span>${subtotal.toFixed(2)}</span>
                     </div>
-                    <div className="flex justify-between text-lg">
+                    <div className="flex justify-between text-gray-800 text-lg">
                         <span>Shipping:</span>
                         <span>${shippingRate.toFixed(2)}</span>
                     </div>
-                    <div className="flex justify-between text-lg">
+                    <div className="flex justify-between text-gray-800 text-lg">
                         <span>Tax:</span>
                         <span>${tax.toFixed(2)}</span>
                     </div>
